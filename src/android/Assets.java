@@ -15,7 +15,6 @@ import org.apache.cordova.CordovaPlugin;
 
 import java.lang.reflect.Field;
 
-
 public class Assets extends CordovaPlugin {
     protected static final String TAG = "startApp";
     protected boolean NO_PARSE_INTENT_VALS = false;

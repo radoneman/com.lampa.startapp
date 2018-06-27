@@ -20,11 +20,12 @@ import android.content.ComponentName;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageInfo;
-
-import java.util.HashMap;
-import java.util.Iterator;
 import android.net.Uri;
 import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 
 public class startApp extends Assets {
     private HashMap<Integer, BroadcastReceiver> broadcastReceiverHashMap = new HashMap<Integer, BroadcastReceiver>();
@@ -134,14 +135,14 @@ public class startApp extends Assets {
                 params = args.getJSONObject(0);
 
                 /**
-                 * disable parsing intent values
+                 * Disable parsing intent values
                  */
                 if (params.has("noParse")) {
                     NO_PARSE_INTENT_VALS = true;
                 }
 
                 /**
-                 * set application
+                 * Set application
                  * http://developer.android.com/reference/android/content/Intent.html(java.lang.String)
                  */
                 if (params.has("application")) {
@@ -154,7 +155,7 @@ public class startApp extends Assets {
                     }
                 }
                 /**
-                 * set intent
+                 * Set intent
                  * http://developer.android.com/reference/android/content/Intent.html (java.lang.String)
                  */
                 else if (params.has("intent")) {
