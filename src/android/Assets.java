@@ -1,10 +1,10 @@
 /**
-	com.lampa.startapp, ver. 6.1.6
-	https://github.com/lampaa/com.lampa.startapp
-	
-	Phonegap plugin for check or launch other application in android device (iOS support).
-	bug tracker: https://github.com/lampaa/com.lampa.startapp/issues
-*/
+ *	com.lampa.startapp, ver. 6.1.6
+ *	https://github.com/lampaa/com.lampa.startapp
+ *
+ *	Phonegap plugin for check or launch other application in android device (iOS support).
+ *	bug tracker: https://github.com/lampaa/com.lampa.startapp/issues
+ */
 
 package com.lampa.startapp;
 
@@ -20,10 +20,6 @@ public class Assets extends CordovaPlugin {
     protected static final String TAG = "startApp";
     protected boolean NO_PARSE_INTENT_VALS = false;
 
-
-    /**
-     * functions
-     */
     protected String parseExtraName(String extraName) {
         String parseIntentExtra = extraName;
 
@@ -44,8 +40,7 @@ public class Assets extends CordovaPlugin {
     }
 
     protected String getIntentValueString(String flag) throws NoSuchFieldException, IllegalAccessException {
-
-        if(NO_PARSE_INTENT_VALS) {
+        if (NO_PARSE_INTENT_VALS) {
             return flag;
         }
 
