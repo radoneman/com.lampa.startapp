@@ -34,7 +34,7 @@
 			</feature>
 		</config-file>
 
-        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+        <config-file target="*-Info.plist" parent="/*">
           <array>
             <dict>
               <key>LSApplicationQueriesSchemes</key>
