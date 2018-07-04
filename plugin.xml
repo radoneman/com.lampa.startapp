@@ -34,15 +34,10 @@
 			</feature>
 		</config-file>
 
-        <config-file target="*-Info.plist" parent="/*">
-          <array>
-            <dict>
-              <key>LSApplicationQueriesSchemes</key>
-              <array>
+        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+            <array>
                 <string>square-commerce-v1</string>
-              </array>
-            </dict>
-          </array>
+            </array>
         </config-file>
 
 		<header-file src="src/ios/startApp.h"/>
